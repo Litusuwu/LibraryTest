@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Mont Black';
+  src: url('../fonts/Mont-Black.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Mont Italic';
+  src: url('../fonts/Mont-LightItalic.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+#header{
+  position: relative;
+}
+#formInput{
+  position: absolute;
+  background-color: white;
+  height: 40%;
+  width: 30%;
+  z-index: 2;
+  right: 10%;
+  bottom: 35%;
+  border-radius: 10%;
+}
+.main{
+  display: flex;
+  justify-content: center;
+  font-family: 'Mont Black', sans-serif;
+}
+.labelA{
+  margin: 2rem;
+  font-family: 'Mont Black', sans-serif;
+  text-align: center !important;
+  font-size: 1rem;
+  font-weight: bold !important;
+}
