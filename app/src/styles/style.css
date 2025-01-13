@@ -1,42 +1,64 @@
-@font-face {
-  font-family: 'Mont Black';
-  src: url('../fonts/Mont-Black.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Mont Italic';
-  src: url('../fonts/Mont-LightItalic.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Space+Grotesk:wght@300..700&display=swap');
+
 
 body{
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
 }
+
 #header{
   position: relative;
 }
 #formInput{
   position: absolute;
   background-color: white;
-  height: 40%;
-  width: 30%;
+  height: 60%;
+  width: 20%;
   z-index: 2;
-  right: 10%;
-  bottom: 35%;
-  border-radius: 10%;
+  right: 15%;
+  bottom: 20%;
+  border-radius: 2%;
 }
 .main{
-  display: flex;
-  justify-content: center;
-  font-family: 'Mont Black', sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-templae-rows: 1fr;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
 }
 .labelA{
-  margin: 2rem;
-  font-family: 'Mont Black', sans-serif;
-  text-align: center !important;
-  font-size: 1rem;
-  font-weight: bold !important;
+  font-family: "Space Grotesk", serif;
+  margin: 1.5rem;
+  text-align: center;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-weight: bolder;
+}
+.containerCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  max-width: 80%;
+  min-width: 60%;
+  gap: 2rem;
+}
+.containerCard {
+  display: flex;
+  flex-direction: row;
+  
+  align-items: center;
+  background-color: white;
+  padding: 1rem;
+  border: 2px solid #ccc;
+  text-align: center;
+  border-radius: 5px;
+  img{
+    width: calc(10px + 3rem);
+    height: calc(10px + 3rem);
+    margin-left: 1rem;
+  }
+  span, b{
+    font-size: clamp(1rem, 2vw, 1.5rem);
+  }
+  overflow: hidden;
 }
