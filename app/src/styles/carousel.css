@@ -1,108 +1,158 @@
 
-.secondComponent .custom-prev,
-.secondComponent .custom-next {
-  /* position: absolute; */
-  /* top: 10%; */
-  /* transform: translateY(-50%); */
-  width: 50px;
-  height: 50px;
-  background-color: #8d3737 ;
-  border-radius: 50%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-.secondComponent .carousel-control-next,
-.secondComponent .caorusel-control-prev{
-    width: auto !important;
-    height: auto !important;
-}
-.secondComponent .custom-prev:hover,
-.secondComponent .custom-next:hover {
-  background-color: #2b7dcf;
-}
-
-.secondComponent .carousel-inner {
-  border-radius: 8px;
-  overflow: hidden;
-  
-}
-
-.imageC2 {
-  max-width: 100%;
-  max-height: 100%;
-}
 li{
   list-style-type: none;
 }
 .secondComponent{
   font-family: 'Monserrate', sans-serif;
 }
-
-/* Fondo gris del contenedor */
 .bg-light-gray {
-  background: linear-gradient(to bottom, white 20%, #f5f5f5 20%);
-  padding: 2rem; /* Espaciado interno */
-  border-radius: 8px; /* Bordes redondeados */
+  background: linear-gradient(to bottom, rgb(255, 255, 255) 25%, #efedf1 20%);
+  padding: 2rem;
+  border-radius: 8px;
   position: relative;
 }
-
-/* Imagen que se superpone */
 .superposed-image {
   position: absolute;
-  top: -17rem; /* Eleva la imagen hacia arriba */
-  left: 30px; /* Desplaza ligeramente hacia la izquierda */
-  max-width: 90%; /* Ajusta el tamaño de la imagen */
-  border-radius: 8px; /* Bordes redondeados */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra alrededor de la imagen */
+  top: -17rem;
+  left: 50%;
+  max-width: 90%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-
-/* Estilo del contenido */
 .secondComponent h2 {
-  font-size: 1.8rem; /* Tamaño del título */
-  margin-bottom: 1rem; /* Espacio debajo del título */
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
 }
-
 .secondComponent ul {
-  margin: 0; /* Elimina márgenes innecesarios */
-  padding-left: 1.5rem; /* Espaciado a la izquierda para alineación */
-  font-size: 1rem; /* Tamaño de texto de la lista */
+  margin: 0;
+  padding-left: 1.5rem;
+  font-size: 1rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-
 .secondComponent ul li {
   list-style: none;
-  margin-bottom: 0.5rem; /* Espaciado entre ítems */
+  margin-bottom: 0.5rem;
   display: flex;
   align-items: center;
 }
-
 .secondComponent ul li i {
-  color: #ffbf00; /* Color amarillo para el ícono */
-  margin-right: 0.5rem; /* Espaciado entre el ícono y el texto */
+  color: #0036ca;
+  margin-right: 0.5rem;
 }
-
 .secondComponent .btn {
   font-size: 1rem;
   padding: 0.75rem 1.5rem;
 }
+.secondComponent .btn-link img {
+  width: 32px;
+  height: auto;
+}
+.superposed-image {
+  position: relative;
+  width: 450px;
+  height: 510px;
+  object-fit: cover;
+  left: 30px;
+  top: -80%; 
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 
-/* Ajuste de los botones de navegación */
+/* Configuración general */
+li {
+  list-style-type: none;
+}
+
+.secondComponent {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Fondo del contenedor */
+.bg-light-gray {
+  background: linear-gradient(to bottom, white 20%, #f5f5f5 20%);
+  padding: 2rem;
+  border-radius: 8px;
+  position: relative;
+  min-height: 510px; /* Altura mínima fija para el contenedor */
+  overflow: hidden; /* Evita que los elementos sobresalgan */
+}
+.botonInfo{
+  border-radius: 5rem !important;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border: 2px solid #000;
+}
+
+/* Imagen superpuesta */
+.superposed-image {
+  position: relative;
+  width: 450px;
+  height: 510px;
+  object-fit: cover; /* Evita distorsión de la imagen */
+  left: 30px;
+  top: -20%; /* Ajusta la posición vertical */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Área de contenido con Grid */
+.content-area {
+  display: grid;
+  grid-template-rows: 2rem 3rem 9rem 3rem; /* Define filas: botones, título, lista, botón */
+  row-gap: 1rem; /* Espaciado entre las filas */
+  height: 100%; /* Asegura que ocupe toda la altura disponible */
+  margin-top: 5rem;
+}
+
+/* Botones de navegación */
+.navigation-buttons {
+  display: flex;
+  gap: 0.2rem; /* Espaciado entre los botones */
+  justify-content: flex-start; /* Alineación a la izquierda */
+}
+
+/* Título */
+.content-area h2 {
+  font-size: 1.8rem; /* Tamaño del título */
+  font-weight: 800; /* Grosor de la fuente */
+  margin: 0; /* Elimina márgenes extras */
+}
+
+/* Lista */
+.content-area ul {
+  margin: 0; /* Sin márgenes extras */
+  padding: 0; /* Sin padding extra */
+  font-size: 1rem; /* Ajusta el tamaño de la fuente */
+  list-style: none; /* Elimina el estilo predeterminado */
+}
+
+.content-area ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem; /* Espaciado entre ítems */
+}
+
+.content-area ul li i {
+  color: #0036ca; /* Color de los íconos */
+  margin-right: 0.5rem; /* Espaciado entre ícono y texto */
+}
+
+/* Botón de acción */
+.content-area .btn {
+  justify-self: start; /* Alinea el botón a la izquierda */
+  font-size: 1rem;
+  /* padding: 0.5rem 1.5rem; Espaciado interno */
+}
+
+/* Botones de navegación: imágenes */
 .secondComponent .btn-link img {
   width: 32px;
   height: auto;
 }
 
 
-/* aa  */
-.carousel-item {
-  overflow: visible;
-}
-.superposed-image {
-  position: relative;
-  width: 450px;
-  height: 510px;
-  object-fit: contain; /* Garantiza que la imagen se ajuste dentro de estas dimensiones sin recortes */
-  left: 30px;
-  /* Ajusta 'top' para subir la imagen un 20% más arriba */
-  top: -80%; 
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+.carousel-inner {
+  overflow: hidden;
 }

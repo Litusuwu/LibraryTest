@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="src/styles/normalize.css"/>
   <link rel="stylesheet" href="src/styles/style.css"/>
   <link rel="stylesheet" href="src/styles/carousel.css"/>
+  <link rel="stylesheet" href="src/styles/thirdComponent.css"/>
 </head>
 <body>
   <header id="header" class="header">
@@ -46,7 +47,7 @@
   </header>
   <main class="main">
     <span class="labelA ">
-      Conoce nuestros principales beneficios
+      Conoce nuestros principales Beneficios
     </span>
     <div class="containerCards">
       <div class="containerCard">
@@ -55,7 +56,7 @@
         </div>
         <div class="textAreaCard">
           <span>
-            <b>Amplios </b>financiamientos
+            <b style="font-family: 'Montserrat', serif;font-weight: 900;">Amplios </b>financiamientos
           </span>
         </div>
       </div>
@@ -65,7 +66,7 @@
         </div>
         <div class="textAreaCard">
           <span>
-            <b>Descuentos</b> en servicios integrales de sepelio
+            <b style="font-family: 'Montserrat', serif;font-weight: 900;">Descuentos</b> en servicios integrales de sepelio
           </span>
         </div>
       </div>
@@ -75,77 +76,80 @@
         </div>
         <div class="textAreaCard">
           <span>
-            <b>Salones velatorios</b> gratis en todos los servicios
+            <b style="font-family: 'Montserrat', serif;font-weight: 900;">Salones velatorios</b> gratis en todos los servicios
           </span>
         </div>
       </div>
     </div>
   </main>
-  <!-- <div class="secondComponent container mt-4 position-relative">
+  
+  <div class="secondComponent container position-relative">
     <div class="container mt-4 position-relative">
-      <div id="customCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div id="customCarousel" class="carousel slide carousel-fade mt-4" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="row">
-              <div class="col-md-6">
-                <img src="src/images/img_1_desktop.jpg" class="d-block w-100 imageC2" alt="Imagen">
+            <div class="row align-items-center position-relative bg-light-gray">
+              <div class="col-md-5 position-relative contImagen">
+                <img src="src/images/img_1_desktop.jpg" class="superposed-image" alt="Imagen 1">
               </div>
-              <div class="col-md-6 d-flex flex-column justify-content-between bg-light p-4">
-                <div class="d-flex justify-content-start mb-3">
-                  <button class="btn btn-link p-0 me-3 " type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
+              <div class="col-md-7 d-grid content-area">
+                <div class="navigation-buttons d-flex">
+                  <button class="btn btn-link p-0 me-3" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
                     <img src="src/images/svg/ico_flecha_izquierda.svg" alt="Prev" width="32">
                   </button>
                   <button class="btn btn-link p-0" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
                     <img src="src/images/svg/ico_flecha_derecha.svg" alt="Next" width="32">
                   </button>
                 </div>
-                <h2 class="fw-bold">Brindamos diferentes alternativas para cada necesidad</h2>
+                <h2 class="fw-bold">Brindamos diferentes alternativas</h2>
                 <ul class="mt-3">
                   <li><i class="fa-regular fa-circle-check"></i> Mausoleos.</li>
                   <li><i class="fa-regular fa-circle-check"></i> Espacios familiares (Sextuple, Quíntuple y Doble).</li>
                   <li><i class="fa-regular fa-circle-check"></i> Espacios personales y compartidos.</li>
                 </ul>
-                <a href="#" class="btn btn-outline-dark mt-4 align-self-start">Más información</a>
+  
+                <!-- Botón de acción -->
+                <a href="#" class="btn btn-outline-dark mt-4 align-self-start botonInfo">Más información</a>
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            <div class="row">
-              <div class="col-md-6">
-                <img src="src/images/img_2_desktop.jpg" class="d-block w-100 imageC2" alt="Imagen">
+            <div class="row align-items-center position-relative bg-light-gray">
+              <div class="col-md-5 position-relative">
+                <img src="src/images/img_2_desktop.jpg" class="superposed-image" alt="Imagen 2">
               </div>
-              <div class="col-md-6 d-flex flex-column justify-content-between bg-light p-4">
-                <div class="d-flex justify-content-start mb-3">
-                  <button class="btn btn-link p-0 me-3 " type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
+              <div class="col-md-7 d-grid content-area">
+                <div class="navigation-buttons d-flex">
+                  <button class="btn btn-link p-0 me-3" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
                     <img src="src/images/svg/ico_flecha_izquierda.svg" alt="Prev" width="32">
                   </button>
-                  <button class="btn btn-link p-0 " type="button" data-bs-target="#customCarousel" data-bs-slide="next">
+                  <button class="btn btn-link p-0" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
                     <img src="src/images/svg/ico_flecha_derecha.svg" alt="Next" width="32">
                   </button>
                 </div>
                 <h2 class="fw-bold">Para homenajear el descanso eterno</h2>
-                <h4 class="fw-bold">Servicios funerarios</h3>
                 <ul class="mt-3">
+                  <h5 class="fw-bold">Servicios funerarios</h5>
                   <li><i class="fa-regular fa-circle-check"></i> Plan Funerario VIP</li>
                   <li><i class="fa-regular fa-circle-check"></i> Plan Funerario Lujo</li>
                   <li><i class="fa-regular fa-circle-check"></i> Plan Funerario Superior</li>
                   <li><i class="fa-regular fa-circle-check"></i> Plan Funerario Campo Fe</li>
                 </ul>
-                <a href="#" class="btn btn-outline-dark mt-4 align-self-start">Más información</a>
+                <a href="#" class="btn btn-outline-dark mt-4 align-self-start botonInfo">Más información</a>
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            <div class="row">
-              <div class="col-md-6">
-                <img src="src/images/img_3_desktop.jpg" class="d-block w-100 imageC2" alt="Imagen">
+            <div class="row align-items-center position-relative bg-light-gray">
+              <div class="col-md-5 position-relative">
+                <img src="src/images/img_3_desktop.jpg" class="superposed-image" alt="Imagen 3">
               </div>
-              <div class="col-md-6 d-flex flex-column justify-content-between bg-light p-4">
-                <div class="d-flex justify-content-start mb-3">
-                  <button class="btn btn-link p-0 me-3 " type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
+              <div class="col-md-7 d-grid content-area">
+                <div class="navigation-buttons d-flex">
+                  <button class="btn btn-link p-0 me-3" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
                     <img src="src/images/svg/ico_flecha_izquierda.svg" alt="Prev" width="32">
                   </button>
-                  <button class="btn btn-link p-0 " type="button" data-bs-target="#customCarousel" data-bs-slide="next">
+                  <button class="btn btn-link p-0" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
                     <img src="src/images/svg/ico_flecha_derecha.svg" alt="Next" width="32">
                   </button>
                 </div>
@@ -154,7 +158,7 @@
                   <li><i class="fa-regular fa-circle-check"></i> Homenaje eterno</li>
                   <li><i class="fa-regular fa-circle-check"></i> Jardín eterno</li>
                 </ul>
-                <a href="#" class="btn btn-outline-dark mt-4 align-self-start">Más información</a>
+                <a href="#" class="btn btn-outline-dark mt-4 align-self-start botonInfo">Más información</a>
               </div>
             </div>
           </div>
@@ -162,96 +166,35 @@
       </div>
     </div>
   </div>
-   -->
-   <div id="customCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        <div class="row align-items-center position-relative bg-light-gray">
-          <!-- Imagen -->
-          <div class="col-md-6 position-relative">
-            <img src="src/images/img_1_desktop.jpg" class="superposed-image" alt="Imagen 1">
-          </div>
-          <!-- Contenido -->
-          <div class="col-md-6 d-flex flex-column justify-content-between p-4">
-            <div class="d-flex justify-content-start mb-3">
-              <button class="btn btn-link p-0 me-3" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
-                <img src="src/images/svg/ico_flecha_izquierda.svg" alt="Prev" width="32">
-              </button>
-              <button class="btn btn-link p-0" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
-                <img src="src/images/svg/ico_flecha_derecha.svg" alt="Next" width="32">
-              </button>
-            </div>
-            <h2 class="fw-bold">Brindamos diferentes alternativas</h2>
-            <ul class="mt-3">
-              <li><i class="fa-regular fa-circle-check"></i> Mausoleos.</li>
-              <li><i class="fa-regular fa-circle-check"></i> Espacios familiares (Sextuple, Quíntuple y Doble).</li>
-              <li><i class="fa-regular fa-circle-check"></i> Espacios personales y compartidos.</li>
-            </ul>
-            <a href="#" class="btn btn-outline-dark mt-4 align-self-start">Más información</a>
-          </div>
-        </div>
-      </div>
   
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-        <div class="row align-items-center position-relative bg-light-gray">
-          <!-- Imagen -->
-          <div class="col-md-6 position-relative">
-            <img src="src/images/img_2_desktop.jpg" class="superposed-image" alt="Imagen 2">
-          </div>
-          <!-- Contenido -->
-          <div class="col-md-6 d-flex flex-column justify-content-between p-4">
-            <div class="d-flex justify-content-start mb-3">
-              <button class="btn btn-link p-0 me-3" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
-                <img src="src/images/svg/ico_flecha_izquierda.svg" alt="Prev" width="32">
-              </button>
-              <button class="btn btn-link p-0" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
-                <img src="src/images/svg/ico_flecha_derecha.svg" alt="Next" width="32">
-              </button>
-            </div>
-            <h2 class="fw-bold">Para homenajear el descanso eterno</h2>
-            <ul class="mt-3">
-              <li><i class="fa-regular fa-circle-check"></i> Plan Funerario VIP</li>
-              <li><i class="fa-regular fa-circle-check"></i> Plan Funerario Lujo</li>
-              <li><i class="fa-regular fa-circle-check"></i> Plan Funerario Superior</li>
-            </ul>
-            <a href="#" class="btn btn-outline-dark mt-4 align-self-start">Más información</a>
-          </div>
-        </div>
+  <div class="thirdComponent container-fluid mt-5 p-5">
+    <div class="row align-items-center justify-content-center">
+      <!-- Contenedor de texto -->
+      <div class="textContainerThird text-white col-md-4">
+        <h2 class="titleThird">Con más de 20 años de experiencia</h2>
+        <p class="textThird pt-3">y un equipo comprometido, ofrecemos un servicio digno y personalizado.</p>
+        <a href="#" class="btn mt-4 align-self-start botonFooter">¡Cotiza aquí!</a>
       </div>
-  
-      <!-- Slide 3 -->
-      <div class="carousel-item">
-        <div class="row align-items-center position-relative bg-light-gray">
-          <!-- Imagen -->
-          <div class="col-md-6 position-relative">
-            <img src="src/images/img_3_desktop.jpg" class="superposed-image" alt="Imagen 3">
-          </div>
-          <!-- Contenido -->
-          <div class="col-md-6 d-flex flex-column justify-content-between p-4">
-            <div class="d-flex justify-content-start mb-3">
-              <button class="btn btn-link p-0 me-3" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
-                <img src="src/images/svg/ico_flecha_izquierda.svg" alt="Prev" width="32">
-              </button>
-              <button class="btn btn-link p-0" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
-                <img src="src/images/svg/ico_flecha_derecha.svg" alt="Next" width="32">
-              </button>
-            </div>
-            <h2 class="fw-bold">Para conmemorar sus recuerdos</h2>
-            <ul class="mt-3">
-              <li><i class="fa-regular fa-circle-check"></i> Homenaje eterno</li>
-              <li><i class="fa-regular fa-circle-check"></i> Jardín eterno</li>
-            </ul>
-            <a href="#" class="btn btn-outline-dark mt-4 align-self-start">Más información</a>
-          </div>
-        </div>
+      <!-- Contenedor de imagen -->
+      <div class="imageContainerThird col-md-3 ml-5  position-relative">
+        <img src="src/images/img_4_desktop.jpg" alt="imageDesktop4" >
       </div>
     </div>
   </div>
   
   
-  <footer class="footer">
+  <footer class="footer bg-light py-1">
+    <div class="container text-center">
+      <p class="mb-1"><b>Una empresa del</b></p>
+      <div class="d-flex justify-content-center align-items-center">
+        <img src="src/images/svg/ico_logo_grupofe.svg" alt="Logo Grupo Fe" style="width: 120px; height: auto;" />
+      </div>
+      <p class="text-muted small">
+        Grupo Fe Holding S.R.L. <br> RUC: 2010197867
+      </p>
+      <hr>
+      <p class="text-muted small">&copy; 2024 Campo Fe</p>
+    </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://kit.fontawesome.com/94ef27d3a6.js" crossorigin="anonymous"></script>
