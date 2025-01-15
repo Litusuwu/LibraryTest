@@ -15,14 +15,6 @@
     width: auto !important;
     height: auto !important;
 }
-/* .secondComponent .custom-prev {
-  right: 60px;
-}
-
-.secondComponent .custom-next {
-  right: 60px;
-} */
-
 .secondComponent .custom-prev:hover,
 .secondComponent .custom-next:hover {
   background-color: #2b7dcf;
@@ -31,18 +23,86 @@
 .secondComponent .carousel-inner {
   border-radius: 8px;
   overflow: hidden;
+  
 }
 
 .imageC2 {
   max-width: 100%;
   max-height: 100%;
 }
+li{
+  list-style-type: none;
+}
+.secondComponent{
+  font-family: 'Monserrate', sans-serif;
+}
 
-/* .secondComponent .carousel-item {
+/* Fondo gris del contenedor */
+.bg-light-gray {
+  background: linear-gradient(to bottom, white 20%, #f5f5f5 20%);
+  padding: 2rem; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+  position: relative;
+}
+
+/* Imagen que se superpone */
+.superposed-image {
+  position: absolute;
+  top: -17rem; /* Eleva la imagen hacia arriba */
+  left: 30px; /* Desplaza ligeramente hacia la izquierda */
+  max-width: 90%; /* Ajusta el tamaño de la imagen */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra alrededor de la imagen */
+}
+
+/* Estilo del contenido */
+.secondComponent h2 {
+  font-size: 1.8rem; /* Tamaño del título */
+  margin-bottom: 1rem; /* Espacio debajo del título */
+}
+
+.secondComponent ul {
+  margin: 0; /* Elimina márgenes innecesarios */
+  padding-left: 1.5rem; /* Espaciado a la izquierda para alineación */
+  font-size: 1rem; /* Tamaño de texto de la lista */
+}
+
+.secondComponent ul li {
+  list-style: none;
+  margin-bottom: 0.5rem; /* Espaciado entre ítems */
   display: flex;
   align-items: center;
 }
-.secondComponent .carousel-inner {
+
+.secondComponent ul li i {
+  color: #ffbf00; /* Color amarillo para el ícono */
+  margin-right: 0.5rem; /* Espaciado entre el ícono y el texto */
+}
+
+.secondComponent .btn {
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+}
+
+/* Ajuste de los botones de navegación */
+.secondComponent .btn-link img {
+  width: 32px;
+  height: auto;
+}
+
+
+/* aa  */
+.carousel-item {
+  overflow: visible;
+}
+.superposed-image {
+  position: relative;
+  width: 450px;
+  height: 510px;
+  object-fit: contain; /* Garantiza que la imagen se ajuste dentro de estas dimensiones sin recortes */
+  left: 30px;
+  /* Ajusta 'top' para subir la imagen un 20% más arriba */
+  top: -80%; 
   border-radius: 8px;
-  overflow: hidden;
-}  */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
