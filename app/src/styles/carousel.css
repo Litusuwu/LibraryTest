@@ -1,1 +1,48 @@
 
+.secondComponent .custom-prev,
+.secondComponent .custom-next {
+  /* position: absolute; */
+  /* top: 10%; */
+  /* transform: translateY(-50%); */
+  width: 50px;
+  height: 50px;
+  background-color: #8d3737 ;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.secondComponent .carousel-control-next,
+.secondComponent .caorusel-control-prev{
+    width: auto !important;
+    height: auto !important;
+}
+/* .secondComponent .custom-prev {
+  right: 60px;
+}
+
+.secondComponent .custom-next {
+  right: 60px;
+} */
+
+.secondComponent .custom-prev:hover,
+.secondComponent .custom-next:hover {
+  background-color: #2b7dcf;
+}
+
+.secondComponent .carousel-inner {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.imageC2 {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* .secondComponent .carousel-item {
+  display: flex;
+  align-items: center;
+}
+.secondComponent .carousel-inner {
+  border-radius: 8px;
+  overflow: hidden;
+}  */

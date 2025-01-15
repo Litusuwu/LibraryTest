@@ -4,9 +4,7 @@
 body{
   display: flex;
   flex-direction: column;
-  /* display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr; */
+  align-items: center;
 }
 
 #header{
@@ -26,8 +24,6 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
-  /* flex-direction: column; */
 }
 .labelA{
   font-family: "Montserrat", serif;
@@ -36,20 +32,11 @@ body{
   font-size: clamp(1rem, 2vw, 1.5rem);
   font-weight: bolder;
 }
-.containerCards{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  max-width: 70%;
-  gap: 1.5rem;
-  /* flex-wrap: wrap; */
-  margin: 0.5rem;
-}
 .containerCards {
   display: flex;
   flex-wrap: wrap; 
   justify-content: center;
-  max-width: 70%;
+  max-width: 100%;
   gap: 2rem;
   margin: 1rem auto;
 }
@@ -102,64 +89,10 @@ body{
 .containerCard b {
   font-weight: bold;
 }
-/* .containerCard{
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  border: 0.2rem solid #ccc;
-  padding: 1rem;
-  border-radius: 10px;
-}
-.containerCard img{
-  width: clamp(1.8rem, 2.8vw, 3.8rem);
-  height: clamp(1.8rem, 2.8vw, 3.8rem);
-}
-.imageAreaCard{
-  display: flex;
-  /* flex: 1; */
-  /* border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-  aspect-ratio: 1 / 1;
-  object-fit: contain;
-  margin-left: 1rem;
-  margin-right: 1.5rem;
-  width: clamp(3.8rem, 4.7vw, 5.7rem);
-}
-.textAreaCard{
-  font-size: 1.3rem;
-  display: flex;
-  /* flex: 3.5; */
-  /* flex-direction: column;
-  justify-content: center;
-  align-items: start;
-} */
 
-/*
-.containerCards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  max-width: 80%;
-  min-width: 60%;
-  gap: 2rem;
+li{
+  list-style-type: none;
 }
-.containerCard {
-  display: flex;
-  flex-direction: row;
-  
-  align-items: center;
-  background-color: white;
-  padding: 1rem;
-  border: 2px solid #ccc;
-  text-align: center;
-  border-radius: 5px;
-  img{
-    width: calc(10px + 3rem);
-    height: calc(10px + 3rem);
-    margin-left: 1rem;
-  }
-  span, b{
-    font-size: clamp(1rem, 2vw, 1.5rem);
-  }
-  overflow: hidden;
-} */
+.secondComponent{
+  font-family: 'Monserrate', sans-serif;
+}
