@@ -71,7 +71,7 @@ li {
 
 /* Fondo del contenedor */
 .bg-light-gray {
-  background: linear-gradient(to bottom, white 20%, #f5f5f5 20%);
+  background: linear-gradient(to bottom, white 25%, #f5f5f5 20%);
   padding: 2rem;
   border-radius: 8px;
   position: relative;

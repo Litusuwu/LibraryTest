@@ -23,6 +23,7 @@
 
 .botonFooter {
     background-color: #ffbb00;
+    border-radius: 5rem !important;
     color: #000000;
     font-weight: 600;
     font-size: 1.2rem;
@@ -34,7 +35,7 @@
 }
 
 .botonFooter:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
     background-color: #ffbb00;
     color: #000000;
 }
