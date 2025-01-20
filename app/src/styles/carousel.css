@@ -71,7 +71,7 @@ li {
 
 /* Fondo del contenedor */
 .bg-light-gray {
-  background: linear-gradient(to bottom, white 25%, #f5f5f5 20%);
+  background: linear-gradient(to bottom, white 20%, #f5f5f5 20%);
   padding: 2rem;
   border-radius: 8px;
   position: relative;
@@ -83,6 +83,7 @@ li {
   font-size: 1.8rem;
   font-weight: bold;
   border: 2px solid #000;
+  margin-bottom: 1rem;
 }
 
 /* Imagen superpuesta */
@@ -100,8 +101,8 @@ li {
 /* Área de contenido con Grid */
 .content-area {
   display: grid;
-  grid-template-rows: 2rem 3rem 9rem 3rem; /* Define filas: botones, título, lista, botón */
-  row-gap: 1rem; /* Espaciado entre las filas */
+  grid-template-rows: 2rem 3rem 9rem 3rem ; /* Define filas: botones, título, lista, botón */
+  row-gap: 1.3rem; /* Espaciado entre las filas */
   height: 100%; /* Asegura que ocupe toda la altura disponible */
   margin-top: 5rem;
 }

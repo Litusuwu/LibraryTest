@@ -7,17 +7,15 @@
     color: white;
     font-weight: 800;
     font-size: 2.5rem;
-    /* margin: 2rem 0; */
 }
 .textThird{
    font-size: 1.2rem;
-   /* margin-top: 1rem; */
    font-weight: 600;
 }
 
 .imageContainerThird img{
   height: auto;
-  max-width: 100%; /* Asegura que nunca exceda el ancho del contenedor */
+  max-width: 100%;
   min-width: 50%;
 }
 
@@ -34,11 +32,17 @@
     transition: box-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out;
 }
 
-.botonFooter:hover {
+.botonFooter:hover{
     box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
     background-color: #ffbb00;
     color: #000000;
 }
+
+/* .botonFooter:{
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
+    background-color: #ffbb00;
+    color: #000000;
+} */
 .footer{
     min-width: 100%;
     max-height: 50%;
@@ -48,3 +52,67 @@
     padding: 0;
     margin: 0;
 }
+@media (max-width: 664.98px) {
+    #formInput{
+      background-color: aqua;
+      position: relative;
+      min-width: 100%;
+      right: 0%;
+      /* bottom: 20%; */
+    }
+    .banner1{
+      content: url("../images/banner-1-mobile.jpg");
+    }
+    .banner2{
+      content: url("../images/banner-2-mobile.jpg");
+  
+    }
+    .banner3{
+      content: url("../images/banner-3-mobile.jpg");
+  
+    }
+    .banner4{
+      content: url("../images/banner-4-mobile.jpg");
+  
+    }
+    .banner5{
+      content: url("../images/banner-5-mobile.jpg");
+    }
+    .bannerM1{
+      content: url("../images/img_1_mobile.jpg");
+    }
+    .bannerM2{
+      content: url("../images/img_2_mobile.jpg");
+    }
+    .bannerM3{
+      content: url("../images/img_3_mobile.jpg");
+    }
+    .superposed-image{
+      width: 298px;
+      height: 266px;
+      left: 1rem;
+    }
+    .content-area {
+      display: grid;
+      grid-template-rows: 2rem 6rem 9rem 4rem ; /* Define filas: botones, título, lista, botón */
+      row-gap: 1rem; /* Espaciado entre las filas */
+      height: 100%; /* Asegura que ocupe toda la altura disponible */
+      margin-top: 5rem;
+      margin-top: 2rem;
+    }
+    .containerCards {
+      gap: 0.5rem;
+      margin: 1rem auto;
+    }
+    .thirdRow{
+        flex-direction: column-reverse;
+    }
+    .imageContainerThird{
+        min-width: 100%;
+    }
+    .imageContainerThird img{
+        width: 100%;
+        object-fit: cover;
+        height: auto;
+    }
+  }
